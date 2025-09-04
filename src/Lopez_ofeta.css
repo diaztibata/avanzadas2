@@ -1,0 +1,106 @@
+:root {
+  --text: #2b2b2b;
+  --title: #163a6b;
+  --primary: #0077cc;
+  --primary-hover: #005fa3;
+  --link: #0077cc;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/* Layout general de la sección */
+.offers {
+  padding: 64px 24px;
+}
+
+.offers__heading {
+  color: var(--title);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;  
+  text-align: center;
+}
+
+.offers__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Columna de texto */
+.offers__copy {
+  max-width: 620px; 
+  gap: 16px;         
+}
+
+
+
+.offers__subheading {
+  color: var(--title);
+  font-size: 1.25rem;         
+  font-weight: 700;
+  margin: 0 0 14px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+
+.offers__text {
+  color: var(--text);
+  line-height: 1.75;
+  font-size: 1rem;
+  margin: 0 0 22px;
+}
+
+.offers__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+/* Botón principal */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  border-radius: 999px;       
+  padding: 12px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn--primary {
+  background: var(--primary);
+  color: #fff;
+  width: 70%;       
+  max-width: 400px;
+}
+
+/* Enlace secundario */
+.link {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  margin-left: 60px;
+}
+
+
+/* Columna de imagen */
+.offers__media img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  aspect-ratio: 16/10;        
+  object-fit: cover;
+  max-width: none; 
+}
+
