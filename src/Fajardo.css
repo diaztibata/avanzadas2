@@ -1,0 +1,44 @@
+.fajardo-subnav {
+  background: #fff;
+  border-bottom: 1px solid #d2d2d7;
+  padding: 12px 0;
+  overflow-x: auto; /* Scroll en móvil */
+}
+
+.fajardo-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Espacio entre cada item */
+  padding: 0 20px;
+  list-style: none;
+  margin: 0;
+}
+
+.fajardo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fajardo-link {
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
+  transition: color 0.2s ease;
+}
+
+.fajardo-link:hover {
+  color: #0066cc; /* Azul Apple */
+}
+
+.fajardo-icon img {
+  width: 40px;
+  height: 54px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.fajardo-label {
+  white-space: nowrap;
+}
