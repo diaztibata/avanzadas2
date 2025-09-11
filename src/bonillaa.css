@@ -1,0 +1,70 @@
+/* App.css */
+
+.buddy-section {
+  display: flex;
+  height: 400px; /* Ajusta la altura según necesidad */
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+/* Lado izquierdo */
+.text-content {
+  flex: 1;
+  background-color: #144d82; /* Azul parecido al de la imagen */
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Icono (Pokebola) al lado del título */
+.text-content h2 {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  gap: 15px;
+}
+
+/* Para insertar la pokebola como círculo con fondo blanco */
+.text-content h2::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Subtítulo */
+.text-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Párrafo */
+.text-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+/* Lado derecho con imagen */
+.image-content {
+  flex: 1;
+  position: relative;
+}
+
+.image-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
